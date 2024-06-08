@@ -1,0 +1,350 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/02-trame.svg);
+    background-color: #1e1e1e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* changing the scroll bar appearence */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4c7097;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8fb2d8;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    margin-top: 35px;
+    height: 40px;
+}
+
+header h2 {
+    margin-top: 50px;
+    margin-left: 20px;
+    color: #8fb2d8;
+    font-size: 1.2rem;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+ 
+.container {
+    background-color: #262626;
+    height: 1000px;
+    width: 90%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.select-options {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    color: #ccc;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+#input {
+    height: 200px;
+    width: 95%;
+    background-color: #262626;
+    margin-bottom: 20px;
+    border: 3px dashed #4c7097;
+    color: #ccc;
+    font-size: 20px;
+    border-radius: 10px;
+    resize: none;
+}
+.output_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.output{
+    height: 470px;
+    border: 3px dashed #4c7097;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    border-radius: 8px;
+}
+
+#output-text{
+    font-size: 18px;
+    height: auto;
+    width: 98%;
+    text-align: left;
+    border: 3px dashed #4c7097;
+    color: #ccc;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    border-radius: 6px;
+}
+/* sub button */
+.sub_btn {
+    background-color: #4c8bf5;
+    border: none;
+    color: white;
+    width: 20%;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    margin-bottom: 20px;
+    transition: all 1s;
+    text-transform: uppercase;
+}
+.features{
+    background-color: #4c8bf5;
+    border: none;
+    color: white;
+    width: 10%;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    transition: all 1s;
+    text-transform: uppercase;
+}
+
+.features:hover, .sub_btn:hover {
+    background-color: #4c8bb1;
+    box-shadow: 3px 3px 3px 3px rgba(76, 138, 245, 0.2);
+}
+
+.radio-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.radio-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+}
+#output-text{
+        width: 98%;
+        font-size: 14px;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+.radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.radio-button__input:checked+.radio-button__label .radio-button__custom {
+    background-color: #4c8bf5;
+    border-color: transparent;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__input:checked+.radio-button__label {
+    color: #4c8bf5;
+}
+.radio-button__label:hover .radio-button__custom {
+    transform: scale(1.2);
+    border-color: #4c8bf5;
+    box-shadow: 0 0 20px #4c8bf580;
+}
+
+/* footer */
+.footer {
+    position: absolute;
+    background-image: url(/static/img/02-trame.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .footer-section {
+} */
+
+.footer-section img {
+    height: 50px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    /* line-height: 1.6; */
+}
+
+.footer-section #about_btn {
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(76, 139, 245);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 1s;
+    color: white;
+}
+
+.footer-section #about_btn:hover {
+    background-color: #4c8bf5;
+    box-shadow: 3px 5px 14px 6px rgba(76, 139, 245, 0.52);
+    -webkit-box-shadow: 3px 5px 14px 6px rgba(76, 139, 245, 0.52);
+    -moz-box-shadow: 3px 5px 14px 6px rgba(76, 139, 245, 0.52);
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.7em;
+}
+/*  media query for small devices */
+@media (max-width: 767px) {
+    header h2{
+        font-size: 1.1rem;
+    }
+    header img {
+        height: 40px;
+        margin-top: 45px;
+    }
+    .container{
+        height: 1080px;
+        margin-top: -50px;
+    }
+    .container h2{
+        font-size: 1.2rem;
+        margin-bottom:35px ;
+    }
+    .features{
+        margin-top: 20px;
+        /* padding-right: 100px; */
+        width: 35%;
+    }
+    #input{
+        margin-top: 20px;
+        font-size: 14px;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .sub_btn{
+        width: 40%;
+        margin-top: -5px;
+    }
+    #output-text{
+        width: 90%;
+        font-size: 14px;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    .radio-button__label{
+        font-size: 12px;
+    }
+    .radio-button__custom {
+        width: 15px;
+        height: 15px;
+    }
+}
+@media (max-width: 890px) {
+#download_btn {
+    width: 15%;
+}
+}
+@media (max-width: 428px) {
+#download_btn {
+width: 35%;
+}
+}

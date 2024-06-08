@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+    <link rel="stylesheet" href="/static/css/style_Index.css">
+    <title>ASCII ART WEB</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://learn.zone01oujda.ma/" target="_blank"><img src="/static/img/logo.png"
+                alt="zone01oujda web site"></a>
+        <h2>ASCII ART WEB ZONE 01</h2>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Select your favorite banner</h2>
+            <div class="select-options">
+                <form action="ascii-art" method="POST">
+                    <div class="content">
+                        <div class="radio-button-container">
+                            <div class="radio-button">
+                                <input type="radio" class="radio-button__input" value="standard" id="radio1"
+                                    name="options" checked {{if eq .Option "standard"}}checked{{else}}{{end}}>
+                                <label class="radio-button__label" for="radio1">
+                                    <span class="radio-button__custom"></span>
+                                    Standard
+                                </label>
+                            </div>
+                            <div class="radio-button">
+                                <input type="radio" class="radio-button__input" value="shadow" id="radio2"
+                                    name="options"  {{if eq .Option "shadow"}}checked{{else}}{{end}}>
+                                <label class="radio-button__label" for="radio2">
+                                    <span class="radio-button__custom"></span>
+                                    Shadow
+                                </label>
+                            </div>
+                            <div class="radio-button">
+                                <input type="radio" class="radio-button__input" value="thinkertoy" id="radio3"
+                                    name="options"  {{if eq .Option "thinkertoy"}}checked{{else}}{{end}}>
+                                <label class="radio-button__label" for="radio3">
+                                    <span class="radio-button__custom"></span>
+                                    Thinkertoy
+                                </label>
+                            </div>
+                        </div>
+                        <textarea placeholder="Please put your input here" id="input"
+                            name="input" required>{{.Input}}</textarea><br>
+                        <input class="sub_btn" type="submit" value="Generate"></input>
+                        <a class="sub_btn" href="/usage">USAGE</a>
+                        <div class="output_container">
+                            <div class="output">
+                                <!-- <textarea placeholder="The output should be here <3" id="output-text" contenteditable="true"
+                                    name="output">{{.Output}}</textarea> -->
+                                    <pre id="output-text" contenteditable="true">{{.Output}}</pre>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="features copy">Copy</button>
+                        <button id="download_btn" class="features downloadbtn">Download</button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Learn more about our project and mission to bring ASCII art to the web.</p>
+                <p style="color: #4c8bf5; text-transform: capitalize;">made with love by students of Zone01 Oujda</p><br>
+                <a id="about_btn" href="/about">ABOUT US</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: boubkerelmaayouf@gmail.com</p>
+                <p>Email: yassineouzddou@gmail.com</p>
+                <p>Email: fadil.ue2006@gmail.com</p>
+                <a class="aboutbtn" href="https://learn.zone01oujda.ma/" target="_blank"><img src="/static/img/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ASCII ART WEB. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

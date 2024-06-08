@@ -1,0 +1,333 @@
+html {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: "IBM Plex Mono", monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/img/02-trame.svg);
+    background-color: #1e1e1e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  /* changing the scroll bar appearence */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #262626;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4c7097;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8fb2d8;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  header img {
+    margin-top: 35px;
+    height: 40px;
+  }
+
+  header h2 {
+    margin-top: 50px;
+    margin-left: 20px;
+    color: #8fb2d8;
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card {
+    width: 380px;
+    height: 470px;
+    background: rgb(38, 38, 38);
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+    border-radius: 10px;
+  }
+
+  .imge {
+    height: 130px;
+    background-color: #8fb2d8;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .imge .Usericon {
+    /* background-color: #414141; */
+    transform: translateX(10px) translateY(10px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(/static/img/belmaayopf-removebg-preview.png);
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px dashed #4c7097;
+  }
+
+  .imge .Usericon2 {
+    /* background-color: #414141; */
+    transform: translateX(10px) translateY(10px);
+    background-image: url(/static/img/yaouzddou-removebg-preview.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px dashed #4c7097;
+  }
+
+  .imge .Usericon3 {
+    /* background-color: #414141; */
+    transform: translateX(10px) translateY(10px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(/static/img/mfadil-removebg-preview.png);
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px dashed #4c7097;
+  }
+
+  .imge .UserName {
+    background-color: #414141;
+    width: 120px;
+    height: 30px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: #262626;
+    color: #8fb2d8;
+    padding-left: 5px;
+    margin-top: -25px;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px dashed #8fb2d8;
+    transform: translateX(70px) translateY(-35px);
+  }
+
+  .imge .Id {
+    background-color: #414141;
+    width: 200px;
+    height: 30px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: #262626;
+    color: #8fb2d8;
+    font-size: 17px;
+    font-weight: bold;
+    transform: translateX(70px) translateY(-25px);
+    margin-left: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 40px;
+    border: 2px dashed #8fb2d8;
+    border-radius: 10px;
+  }
+
+  .Description {
+    border-color: #141414;
+    background-color: #414141;
+    transform: translate(5px, 6px);
+    width: 370px;
+    height: 260px;
+    border-radius: 5px;
+    margin-top: -10px;
+    letter-spacing: 1px;
+    /* border: 1px solid #4c7097; */
+  }
+
+  .Description-para {
+    padding: 20px;
+    color: #8fb2d8;
+    font-size: 18px;
+    border: 2px dashed #8fb2d8;
+    border-radius: 10px;
+  }
+
+  /*______Social Media______*/
+  .social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 4px;
+    transform: translatey(10px);
+    margin-top: 3px;
+    background: #414141;
+  }
+
+  .social-media a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .social-media a:last-child {
+    margin-right: 0;
+  }
+
+  .social-media a svg {
+    margin-top: -5px;
+    color: #8fb2d8;
+    transform: translatex(100px) translateY(30px);
+    width: 25px;
+    fill: currentColor;
+  }
+  /* about section */
+  .about_all {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  .about-content {
+    background-color: #262626;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  .about-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8fb2d8;
+  }
+  .about-content_para {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  #about_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  #about_btn:hover {
+    background-color: #4c8bf5;
+  }
+  /* footer */
+  .footer {
+    position: absolute;
+    background-image: url(/static/img/02-trame.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+  }
+
+  .footer-section img {
+    height: 50px;
+  }
+
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .footer-section #about_btn {
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(76, 139, 245);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 1s;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  .cards_container {
+    display: flex;
+    gap: 100px;
+  }
+  @media (max-width: 768px) {
+    header h2 {
+      font-size: 18px;
+    }
+    header a img {
+      width: 100px;
+    }
+    .cards_container {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      margin-bottom: -40px;
+    }
+  }
+  @media (max-width: 884px) {
+    .cards_container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
