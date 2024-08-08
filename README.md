@@ -34,7 +34,7 @@ Sends data (text and a banner) to the Go server.
 
 ## Authors
 
-- Author 1: Elmaayouf Bopubker
+- Author 1: Elmaayouf Boubker
 - Author 2: Yassine Ouzddou
 - Author 3: Mohammed fadil
 
